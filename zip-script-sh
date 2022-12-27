@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the source directory
-src="/home/backup/mnordbye"
+src="/home/backup/"
 
 # Set the destination for the zip file
 dst="/home/backup_$(date +%F).zip"
