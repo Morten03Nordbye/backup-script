@@ -7,7 +7,7 @@ mkdir -p /home/backup
 copysrc="/home/mnordbye"
 copydst="/home/backup"
 # Exclude temporary files and directories
-exclude_list=(".local" ".mozilla" ".cache")
+exclude_list=(".local" ".mozilla" ".cache" ".steam" ".steampath" ".steampid" "Steam" ".wine" )
 exclude_options=""
 for pattern in "${exclude_list[@]}"; do
   exclude_options+="--exclude=$pattern "
