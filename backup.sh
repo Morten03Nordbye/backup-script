@@ -14,7 +14,7 @@ rsync -av --info=progress2 $exclude "$copysrc" "$copydst"
 # Zip part
 #------------
 # Set the folder to zip
-zipsrc="/home/mnordbye/"
+zipsrc="/home/backup/"
 # Set the destination for the zip file
 zipdst="/home/backup_$(date +%F).zip"
 # Create a zip archive of the source directory and store it in the destination
