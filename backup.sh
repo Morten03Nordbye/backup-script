@@ -7,9 +7,13 @@ mkdir -p /home/backup
 copysrc="/home/mnordbye"
 copydst="/home/backup"
 # Exclude temporary files and directories
-exclude="--exclude=".local" --exclude=".mozilla" --exclude=".cache""
+exclude_list=(".local" ".mozilla" ".cache")
+exclude_options=""
+for pattern in "${exclude_list[@]}"; do
+  exclude_options+="--exclude=$pattern "
+done
 # Copy all files and directories, excluding temporary files and directories
-rsync -av --info=progress2 $exclude "$copysrc" "$copydst"
+rsync -av --info=progress2 $exclude_options "$copysrc" "$copydst"
 #------------
 # Zip part
 #------------
