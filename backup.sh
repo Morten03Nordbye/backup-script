@@ -11,7 +11,7 @@ copysrc="/home/mnordbye"
 copydst="/home/backup"
 
 # Read the exclude list from a file
-exclude_list_file="/home/script/exclude_list.txt"
+exclude_list_file="/home/backup-script/exclude_list.txt"
 exclude_options=()
 while IFS= read -r pattern
 do
