@@ -1,9 +1,8 @@
 # Backup
-Copying files
-```Bash
-rsync -av --info=progress2 /home/mnordbye/ /home/backup
+You will need to 
+```Bash 
+chmod +x backup.sh
 ```
-Now i need to zip the folder
-```Bash
-zip -r backup_$(date +%F).zip /home/backup/
-```
+# IF shit not work
+- Make sure path the exclude list is correct
+- RM old backup folder
