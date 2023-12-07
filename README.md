@@ -56,3 +56,10 @@ The `exclude_list.txt` file should be located at `/home/backup-script/exclude_li
 - If you encounter problems, it might be helpful to remove the old backup folder with the command `rm -r /home/backup` before running the script again.
 
 Please note that this script should be run with the necessary permissions, and make sure to test the script in a safe environment before using it on important data.
+
+
+Contributing
+------------
+
+Contributions to this project are welcome. Please fork the repository and submit a pull request with your changes. For more insights into my other projects and professional background, feel free to visit my portfolio at [nordbye.it](https://nordbye.it/).
+
